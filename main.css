@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: black; */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-overflow: clip;
+
+    user-select: none;
+}
+
+span {
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.leftAlign {
+    align-items: flex-start ;
+}
+
+#global-bg {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#img-centerwall {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#global-bg-cover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(100, 100, 100, 0.7);
+}
+
+#center-section {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    padding: 3%;
+    overflow-y: hidden;
+    font-size: 8pt;
+}
+
+#center-top {
+    flex-direction: row;
+    background-color:rgba(0, 0, 55, 0.25);
+    color: white;
+    text-shadow: 0 0 4px rgb(180, 255, 255);
+    box-shadow: 0 0 8px 0 rgb(10, 0, 30) inset,
+        0 0 15px 5px rgba(50, 50, 75, 0.3);
+}
+
+.bbkt {
+    display: inline-block;
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    max-width: 50px;
+    font-size: 100px;
+}
+#profile-abstract {
+    min-height: 100px;
+    width: 400px;
+}
+#main-name {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+#main-subname {
+    height: fit-content;
+}
+
+#center-main {
+    flex-grow: 100;
+    width: 100%;
+    max-height: 90%;
+
+    display: block;
+    position: relative;
+}
+#center-body {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+}
+#profile-left {
+    height: 100%;
+    flex-grow: 4;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;  
+}
+#profile-right {
+    height: 100%;
+    flex-grow: 9;
+    min-width: 630px;
+    overflow: hidden;
+    background: linear-gradient(336deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(217deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    padding: 7px;
+    border-radius: 8px;
+    border: solid 2px white;
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#ps-t {
+    display: inline-flex;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 5px;
+    align-items: end;
+}
+#ps-t-close {
+    font-size: 22px;
+    width: 22px;
+    color:white;
+    font-family: 'Gruppo', sans-serif;
+}
+#ps-t-close:hover {
+    cursor: pointer;
+    /* text-shadow: #000 0px 0 10px; */
+    text-shadow: 2px 2px 10px  #000, -2px -2px 10px  #000, 2px -2px 10px  #000, -2px 2px 10px  #000;
+}
+
+#ps-body {
+    flex-grow: 100;
+    width: calc(100% - 4px);
+    overflow: hidden;
+    margin: 2px;
+    
+    background-color: black;
+    display: block;
+    position: relative;
+}
+
+#profile-scrollbox {
+    display: block;
+    width: calc(100% + 17px);
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+#profile-skills {
+    display: block;
+    position: relative;
+    width: calc(100% + 17px);
+    height: max-content;
+}
+
+#profile-skills-text {
+    display: block;
+    width: 100%;
+    height: max-content;
+    background-color: black;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 10px;
+    color:bisque;
+
+    user-select: all;
+}
+
+#profile-skills-media {
+    display: block;
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    color: white;
+}
+
+#img-c {
+    position: absolute;
+    left: 420px;
+    top: 120px;
+}
+#img-cpp {
+    position: absolute;
+    left: 420px;
+    top: 190px;
+}
+#img-csharp {
+    position: absolute;
+    left: 370px;
+    top: 260px;
+}
+#img-webstack {
+    position: absolute;
+    left: 410px;
+    top: 350px;
+}
+
+.skill-h1 {
+    font-size: 32px;
+}
+.skill-h2 {
+    font-size: 28px;
+}
+.skill-minor {
+    font-size: 10px;
+}
+.comment {
+    color:limegreen;
+    font-size: 16px;
+}
+.comment2 {
+    /* color:limegreen; */
+    color:lawngreen;
+    font-size: 22px;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 21px #fff,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 151px #0fa;
+}
+.include {
+    color:mediumvioletred;
+}
+.stdlib {
+    color:palevioletred;
+}
+.iden {
+    color:deepskyblue;
+}
+.namesp {
+    color:rgb(120, 255, 120);
+}
+.func {
+    color: aliceblue;
+}
+.oper {
+    color: white;
+}
+.parm {
+    color: aqua;
+}
+.bket-minor {
+    color:darkorange;
+    font-size: 10px;
+}
+.bket {
+    color:darkorange;
+    font-size: 14px;
+}
+.bket2 {
+    color:blueviolet;
+    font-size: 22px;
+}
+.string {
+    color:rgb(255, 255, 150);
+    font-size: 14px;
+    text-shadow:
+    0 0 14px #fff,
+    0 0 151px #0fa;
+}
+
+#profile-3d {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    color: black;
+}
+
+#profile-third {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    color: black;
+}
+
+.app {
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+    margin: 10px;
+    border-radius: 20px;
+
+    display: block;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+}
+.app:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+}
