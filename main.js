@@ -8,7 +8,7 @@ var mWinMov = [];
 
 const Init = () =>
 {
-    mWins.push(document.getElementById("profile-scrollbox"));
+    mWins.push(document.getElementById("embed-skills"));
     mWins.push(document.getElementById("profile-3d"));
     mWins.push(document.getElementById("profile-third"));
 

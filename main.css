@@ -179,126 +179,16 @@ span {
     position: relative;
 }
 
-#profile-scrollbox {
-    display: block;
-    width: calc(100% + 17px);
-    height: 100%;
+embed {
+    margin: 0;
+    border: 0;
+    padding: 0;
     overflow: hidden;
-    overflow-y: scroll;
-}
-#profile-skills {
-    display: block;
-    position: relative;
-    width: calc(100% + 17px);
-    height: max-content;
 }
 
-#profile-skills-text {
-    display: block;
+#embed-skills {
     width: 100%;
-    height: max-content;
-    background-color: black;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 10px;
-    color:bisque;
-
-    user-select: all;
-}
-
-#profile-skills-media {
-    display: block;
-    width: 100%;
-    height: max-content;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    color: white;
-}
-
-#img-c {
-    position: absolute;
-    left: 420px;
-    top: 120px;
-}
-#img-cpp {
-    position: absolute;
-    left: 420px;
-    top: 190px;
-}
-#img-csharp {
-    position: absolute;
-    left: 370px;
-    top: 260px;
-}
-#img-webstack {
-    position: absolute;
-    left: 410px;
-    top: 350px;
-}
-
-.skill-h1 {
-    font-size: 32px;
-}
-.skill-h2 {
-    font-size: 28px;
-}
-.skill-minor {
-    font-size: 10px;
-}
-.comment {
-    color:limegreen;
-    font-size: 16px;
-}
-.comment2 {
-    /* color:limegreen; */
-    color:lawngreen;
-    font-size: 22px;
-    text-shadow:
-    0 0 7px #fff,
-    0 0 21px #fff,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 151px #0fa;
-}
-.include {
-    color:mediumvioletred;
-}
-.stdlib {
-    color:palevioletred;
-}
-.iden {
-    color:deepskyblue;
-}
-.namesp {
-    color:rgb(120, 255, 120);
-}
-.func {
-    color: aliceblue;
-}
-.oper {
-    color: white;
-}
-.parm {
-    color: aqua;
-}
-.bket-minor {
-    color:darkorange;
-    font-size: 10px;
-}
-.bket {
-    color:darkorange;
-    font-size: 14px;
-}
-.bket2 {
-    color:blueviolet;
-    font-size: 22px;
-}
-.string {
-    color:rgb(255, 255, 150);
-    font-size: 14px;
-    text-shadow:
-    0 0 14px #fff,
-    0 0 151px #0fa;
+    height: 100%;
 }
 
 #profile-3d {
